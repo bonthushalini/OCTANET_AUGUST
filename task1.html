@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-page">
+        <header>
+            <h1>Learn More About Me</h1>
+        </header>
+        <main>
+            <button onclick="showSection('about-me-section')">Explore My Journey</button>
+            <button onclick="showSection('interests-section')">Discover My Passions</button>
+        </main>
+    </div>
+
+    <div id="about-me-section" class="hidden">
+        <header>
+            <h1>About Me</h1>
+            <button onclick="showSection('welcome-page')">Back</button>
+        </header>
+        <main>
+            <form id="about-me-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+                
+                <label for="education">Education:</label>
+                <input type="text" id="education" name="education">
+                
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" name="experience" rows="4"></textarea>
+                
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills">
+                
+                <label for="strengths">My Strengths:</label>
+                <textarea id="strengths" name="strengths" rows="4"></textarea>
+                
+                <label for="weaknesses">My Weaknesses:</label>
+                <textarea id="weaknesses" name="weaknesses" rows="4"></textarea>
+                
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="4" required></textarea>
+                
+                <label for="hobbies">Hobbies and Interests:</label>
+                <input type="text" id="hobbies" name="hobbies">
+                
+                <label for="goals">Goals:</label>
+                <input type="text" id="goals" name="goals">
+                
+                <button type="button" onclick="displayAboutMe()">Create Self Introduction</button>
+                <button type="button" onclick="clearForm()">Clear</button>
+            </form>
+            <div id="introduction"></div>
+        </main>
+    </div>
+
+    <div id="interests-section" class="hidden">
+        <header>
+            <h1>My Interests</h1>
+            <button onclick="showSection('welcome-page')">Back</button>
+        </header>
+        <main>
+            <label for="interest-dropdown">Choose Your Interest:</label>
+            <select id="interest-dropdown" onchange="suggestRole()">
+                <option value="">--Select an Interest--</option>
+                <!-- List of interests -->
+                <option value="technology">Technology</option>
+                <option value="design">Design</option>
+                <option value="writing">Writing</option>
+                <option value="business">Business</option>
+                <option value="cooking">Cooking</option>
+                <option value="traveling">Traveling</option>
+                <option value="gardening">Gardening</option>
+                <option value="photography">Photography</option>
+                <option value="astronomy">Astronomy</option>
+                <option value="historical reenactment">Historical Reenactment</option>
+                <option value="urban exploration">Urban Exploration</option>
+                <option value="collecting">Collecting</option>
+                <option value="diy projects">DIY Projects</option>
+                <option value="bird watching">Bird Watching</option>
+                <option value="fermentation">Fermentation</option>
+                <option value="puzzle solving">Puzzle Solving</option>
+                <option value="extreme sports">Extreme Sports</option>
+                <option value="mythology">Mythology</option>
+            </select>
+            <div id="role-suggestion"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#welcome-page {
+    text-align: center;
+    padding: 20px;
+}
+
+#welcome-page main {
+    margin-top: 20px;
+}
+
+#welcome-page button {
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #7dbee9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#welcome-page button:hover {
+    background-color: #79c7f1;
+}
+
+.hidden {
+    display: none;
+}
+
+#about-me-section, #interests-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #27ae60;
+}
+
+form button:hover {
+    background-color: #1e8449;
+}
+
+#introduction, #role-suggestion {
+    margin-top: 20px;
+}
+
+#interests-section select {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
